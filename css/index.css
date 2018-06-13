@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    margin: 0px;
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#products-container {
+    height: 100%;
+    width: 100%;
+    max-width: 1089px;
+
+    margin: auto;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.item-0 {
+    left:0%;
+}
+
+.item-1 {
+    left:-100%;
+}
+
+.item-2 {
+    left: -200%;
+}
