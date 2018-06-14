@@ -9,7 +9,7 @@ class Product {
                 '<div class="product-name">',
                     this.product.name,
                 '</div>',
-                '<image class="product-image" src="' + this.product.hero.href + '">',
+                '<img class="product-image" src="' + this.product.hero.href + '">',
                 '<div class="product-price">',
                     '$' + this.product.priceRange.selling.high + ' - $' + this.product.priceRange.selling.low,
                 '</div>',

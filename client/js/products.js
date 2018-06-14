@@ -26,6 +26,9 @@ class Products {
     get products() {
         return this.productsJSON;
     }
+    get listProducts() {
+        return this.productList;
+    }
 }
 
 const products = new Products();

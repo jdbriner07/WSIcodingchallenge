@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>WSI Coding Challenge Tests</title>
+
+    <!-- Testing libraries -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.0/mocha.min.css">
+    <script type="text/javascript" src="../data.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.0/mocha.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.1/chai.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/sinon.js/3.2.1/sinon.min.js'></script>
+    <script type="text/javascript">
+    	mocha.setup('bdd');
+    </script>
+</head>
+<body>
+<div id='mocha'></div>
+
+<div id="products-container" style="display: none;"></div>
+<div id="carousal-container" class="no-display" style="display: none;">
+    <div id="carousal">
+        <div id="carousal-messages" style="display: none;"></div>
+        <div id="carousal-images-container">
+
+        </div>
+        <div id="carousal-arrows-container">
+            <div id="left-arrow-container">
+                <div id="left-carousal-arrow" class="carousal-arrow">
+                    &#60;
+                </div>
+            </div>
+            <div id="right-arrow-container">
+                <div id="right-carousal-arrow" class="carousal-arrow">
+                    &#62;
+                </div>
+            </div>
+            <div id="carousal-x">
+                X
+            </div>
+        </div>
+        <div id="carousal-position-container">
+
+        </div>
+    </div>
+</div>
+
+    <!-- Source files -->
+    <script type="text/javascript" src="../js/carousal.js"></script>
+    <script type="text/javascript" src="../js/product.js"></script>
+    <script type="text/javascript" src="../js/products.js"></script>
+
+    <!-- Test file -->
+    <script type="text/javascript" src="../test/clientTest.js"></script>
+
+<script type="text/javascript">
+    window.expect = chai.expect;
+	mocha.run();
+</script>
+</body>
+</html>

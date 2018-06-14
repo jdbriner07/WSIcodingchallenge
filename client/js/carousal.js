@@ -15,6 +15,14 @@ class Carousal {
         this.carousalContainer.classList.remove('no-display');
     }
 
+    get images() {
+        return this.imagesArr;
+    }
+
+    get messages() {
+        return this.messagesArr;
+    }
+
     set images(arrOfImages) {
         if (typeof arrOfImages !== 'object' || typeof arrOfImages[0].href !== 'string') {
             console.error('Type error assiging Carsousal.images');
